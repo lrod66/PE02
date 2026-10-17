@@ -3,65 +3,101 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resume</title>
+        <title>Luis Rodriguez | Supply Technician</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <img src="https://picsum.photos/360/220" alt="Profile Picture">
-            <h1>John Doe</h1>
-            <p>Web Developer</p>
+        <header class="profile-header">
+            <img src="Image_1.png" alt="Portrait of Luis Rodriguez">
+            <div class="profile-copy">
+                <h1>Luis Rodriguez</h1>
+                <p>Supply Technician</p>
+            </div>
         </header>
+
         <main>
-            <section class="acordian"> 
-                <h2>Experience</h2>
+            <section class="acordian" aria-labelledby="experience-heading">
+                <h2 id="experience-heading">Experience</h2>
                 <details class="acordian-item">
                     <summary>Company A</summary>
-                    <p>Web Developer (2020 - Present)</p>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>Developed and maintained company website.</li>
-                        <li>Collaborated with design team to create responsive layouts.</li>
-                        <li>Implemented new features based on user feedback.</li>
-                    </ul>
+                    <div class="entry-details">
+                        <h3>Supply Technician</h3>
+                        <p class="entry-dates">2024–Present</p>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>Inventory management of products.</li>
+                            <li>Quality control.</li>
+                            <li>Accounts payable.</li>
+                        </ul>
+                    </div>
                 </details>
                 <details class="acordian-item">
                     <summary>Company B</summary>
-                    <p>Junior Web Developer (2018 - 2020)</p>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>Assisted in the development of e-commerce platform.</li>
-                        <li>Conducted testing and debugging of web applications.</li>
-                        <li>Participated in code reviews and team meetings.</li>
-                    </ul>
+                    <div class="entry-details">
+                        <h3>Inventory Specialist</h3>
+                        <p class="entry-dates">2017–2024</p>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>Inventory management of warehouse stock.</li>
+                            <li>Managing less-than-truckload (LTL) freight.</li>
+                            <li>Working with the inside sales team.</li>
+                        </ul>
+                    </div>
                 </details>
             </section>
 
-            <section class="acordian" id="skills">
-                <h2>Skills</h2>
-                <table>
-                    <tr><td>HTML</td><td>Expert</td></tr>
-                    <tr><td>CSS</td><td>Expert</td></tr>
-                    <tr><td>JavaScript</td><td>Intermediate</td></tr>
-                    <tr><td>React</td><td>Intermediate</td></tr>
-                    <tr><td>Node.js</td><td>Intermediate</td></tr>
-                </table>
+            <section class="acordian" id="skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Skills</h2>
+                <details class="acordian-item">
+                    <summary>Technical skills</summary>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Skill</th>
+                                    <th scope="col">Proficiency</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>JavaScript</td><td>Intermediate</td></tr>
+                                <tr><td>Python</td><td>Expert</td></tr>
+                                <tr><td>C#</td><td>Expert</td></tr>
+                                <tr><td>CSS</td><td>Intermediate</td></tr>
+                                <tr><td>HTML</td><td>Intermediate</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
             </section>
 
+            <section class="acordian" aria-labelledby="education-heading">
+                <h2 id="education-heading">Education</h2>
+                <details class="acordian-item">
+                    <summary>University of Maryland</summary>
+                    <div class="entry-details">
+                        <p class="entry-dates">2017–2019</p>
+                        <p>Bachelor of Business Administration</p>
+                    </div>
+                </details>
+                <details class="acordian-item">
+                    <summary>City University of Seattle</summary>
+                    <div class="entry-details">
+                        <p class="entry-dates">2024–Present</p>
+                        <p>Cybersecurity</p>
+                    </div>
+                </details>
+            </section>
         </main>
 
         <footer>
-            <h3>Contact</h3>
-            <p>
-                <a href="mailto:john@example.com">📧 john@example.com</a>
-                <a href="tel:+1234567890">📞 (123) 456-7890</a>
-            </p>
-            <p>
-                <a href="https://linkedin.com/in/johndoe">LinkedIn</a>
-                <a href="https://github.com/johndoe">GitHub</a>
-                <a href="https://twitter.com/johndoe">Twitter</a>
-            </p>
-            <p>&copy; 2026 John Doe. All rights reserved.</p>
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:rodriguezluis@cityuniversity.edu">rodriguezluis@cityuniversity.edu</a>
+                <a href="tel:111-111-1111">111-111-1111</a>
+                <a href="https://mycourses.cityu.edu/d2l/le/lessons/124099/topics/2604790">LinkedIn</a>
+                <a href="https://github.com/lrod66/PE02">GitHub</a>
+            </div>
+            <p class="copyright">© 2026 Luis Rodriguez. All rights reserved.</p>
         </footer>
 
         <script>
